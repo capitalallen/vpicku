@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>vpicku</title>
+    <meta name="generator" content="ymypt CMS" />
+    <meta name="author" content="Allen" />
+    <meta name="keywords" content="大学接机 新生服务 vpicku 加拿大接机 留学过渡" />
+    <meta name="description" content="这是一个专门为留学生提供大学接机和服务的网站" />
+    <link rel="shortcut icon" id="favicon" href="/favicon.png" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/main.css?v=17.24" />
+    <link rel="stylesheet" type="text/css" href="css/orderpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Droid+Sans|Fjalla+One" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <script type="text/javascript" src="js/insurance.js"></script>
+    <style type="text/css">
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      li {
+        font-family: microsoft yahei;
+      }
+
+    </style>
+  </head>
+<script>
+$(document).ready(function(){
+  $("#index_x").click(function(){ 
+    $("#menu").hide();
+  });
+  $("#index_xs").click(function(){
+    $("#menu").show();
+  });
+});
+</script>
+  <body id="confirmbody" onload="confirmload()">
+<!--  <div id="test"></div>-->
+    <header id="header">
+      <div class="container clearfix">
+        <nav>
+          <a class="icon_menu" id="index_xs"><img src="images/caidan.png"></a>
+          <ul id="menu">
+
+            <li data-menuanchor="page1" class="active"><a data-name="home" href="index.html"><span>Home</span></a></li>
+            <li data-menuanchor="page2"><a href="index.html"><span>Ride</span></a></li>
+            <li data-menuanchor="page3"><a href="index.html"><span>Guide</span></a></li>
+            <li data-menuanchor="page4"><a href="index.html"><span>Process</span></a></li>
+            <li data-menuanchor="page5"><a href="index.html"><span>Team</span></a></li>
+            <li data-menuanchor="page6"><a href="index.html"><span>Contact</span></a></li>
+            <li style=" width:100%;float:right" id="index_x"><img src="images/close.png" style="padding-right:15px; float:right; margin-top:10px"></li>
+            </ul>
+        </nav>
+        <div class="nav-tel" style="font-size:16px"><a href="confirmchinese.html"> 简体中文 </a> | <a style="color:#fff" href="confirmation.html">English</a></div>
+      </div>
+
+    </header>
+    <div class='row'>
+      <div class="top">
+        <h3 class="thank"><span>Thank you,</span> We need few more information.</h3>
+      </div>
+
+      <div class='wizard step-1'>
+        <div class='vehicle' id='vehicle'>
+  <form id="wfform" name="wfform" action="save_order.asp" method="post" onsubmit="return postcheck()" >
+          <div class='vehicle-info'>
+            <div class='vehicle-info__text'>
+              <div class='vehicle-examples'>
+                <div class='vehicle-examples__type'>
+                </div>
+                <div class="confirm">
+                  <h5 class="summery">Passenger Information</h5>
+                  <br>
+                  <p>Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="firstname" id="firstname">
+                  </p>
+                  <br>
+                  <p>Flight Number: &nbsp;&nbsp;
+                    <input type="text" name="lastname"  id="lastname">
+                  </p>
+                  <br>
+                  <p>Email Address: &nbsp;&nbsp;
+                    <input type="text" name="email" id="email">
+                  </p>
+                  <br>
+                  <p>Phone Number:&nbsp;&nbsp;
+                    <input type="text" name="phone" id="phone">
+                    <label>
+                    <input type="hidden" name="servertext" id="servertext" />
+                    <br />
+                    </label>
+                  </p>
+                  <h5 class="servicecharge">Insurance</h5>
+                  <p class="insfirst" style="font-weight: bold;"><input type="checkbox" name="needIns" id="needIns" value="bx" >Need Free Insurance<a href="insurance.html" class="insknow" style="color: black;">(Learn More)</a></p>
+                  <p class="insdetail" id="detail1" style="display:none;">
+                    Name：<input type="text" name="n_name1"><br><br> ID：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="n_nameid1">
+                  </p>
+                  <p class="insfirst" style="font-weight: bold;">Need More Insurance
+                      <select id="moreIns">
+                        <option value="0" id="zeroIns">0</option>
+                        <option value="1" id="oneIns">1</option>
+                        <option value="2" id="twoIns">2</option>
+                      </select>
+                  </p>
+                  <p class="insdetail" id="detail2">Name: <input type="text" name="n_name2"><br><br>
+                  ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="n_nameid2"><br><br>Name: <input type="text" name="n_name3"><br><br>
+                  ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="n_nameid3"></p>
+                  <br>
+                  <h5 class="servicecharge">Payment</h5>
+                  <p>You will pay for the ride when you arrive</p> 
+                  <br>
+                  <h5 class="serviceguide">Guide <input type="checkbox" name="servcheck" id="servcheck" value="1"></h5>
+                  <p class="guideitem">
+                    <input type="checkbox" name="guidelist1" value="Apply SIM Card" id="guidelistA">Apply SIM Card</p>
+                  <p class="guideitem">
+                    <input type="checkbox" name="guidelist1"  value="Apply Credit Card" id="guidelistB">Apply Credit Card</p>
+                  <p class="guideitem"> 
+                    <input type="checkbox" name="guidelist1"  value="Go Shopping" id="guidelistC">Go Shopping</p>
+                  <!--<a href="#" class="reservebutton">reserve</a>-->
+                   <p><input type="radio" name="agree" id="agree">I agree with <a href="passenger.html" class="passenger">passenger notice</a></p>
+                  <input name="" type="submit"  class="reservebutton" style="border:none" value="reserve" id="reservebutton" />
+                </div>
+
+              </div>
+
+            </div>
+            <div class='chargesum'>
+              <div class='summery'>
+                <h5 class="summeryh">Service Summary</h5>
+              </div>
+              <ul class="servicespan">
+                <li class="servicesum"> University:<span id="spanunivers" class="result">Western </span></li>
+                <li class="servicesum">Type of Car<span id="typeCar" class="result">SUV </span></li>
+                <li class="servicesum">passengers<span id="numPassengers" class="result">1 </span></li>
+                <li class="servicesum">Price<span id="priceBefore" class="result">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $85 </span></li>
+                <li class="servicesum">Guide Fee<span id="guideFee" class="result"> &nbsp;&nbsp;$0 </span></li>
+                <li class="servicesum">Fees <span id="totalFee" class="result"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$8.5 </span></li>
+                        <li class="servicesum">Date<span id="presentDate" class="result"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+              </ul>
+              <h5 class="servicecharge">Charges</h5>
+                    <ul class="servicespan">
+                        <li class="servicesum">Total Fees:<span id="finalFee"> &nbsp;&nbsp;&nbsp;$0 </span><span id="chineseYuan"></span></li>
+                        <li class="servicesum">Pickup Date:<span id="dateSelect"> 16 / Feb / 2016 </span></li>
+                    </ul>
+            </div>
+
+          </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+        <script type="text/javascript" src="js/sub1.js"></script>
+  </body>
+
+</html>

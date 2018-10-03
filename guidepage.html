@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>vpicku</title>
+    <meta name="generator" content="ymypt CMS" />
+    <meta name="author" content="Allen" />
+    <meta name="keywords" content="大学接机 新生服务 vpicku 加拿大接机 留学过渡" />
+    <meta name="description" content="这是一个专门为留学生提供大学接机和服务的网站" />
+    <link rel="shortcut icon" id="favicon" href="/favicon.png" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/main.css?v=17.24" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/orderpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Crete+Round|Hammersmith+One|Patua+One" rel="stylesheet">
+    <style type="text/css">
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      li {
+        font-family: microsoft yahei;
+      }
+
+    </style>
+    <script>
+$(document).ready(function(){
+  $("#index_x").click(function(){ 
+    $("#menu").hide();
+  });
+  $("#index_xs").click(function(){
+    $("#menu").show();
+  });
+});
+</script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container clearfix">
+        <nav>
+          <a class="icon_menu" id="index_xs"><img src="images/caidan.png"></a>
+          <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a data-name="home" href="index.html"><span>Home</span></a></li>
+            <li data-menuanchor="page2"><a href="index.html"><span>Ride</span></a></li>
+            <li data-menuanchor="page3"><a href="index.html"><span>Guide</span></a></li>
+            <li data-menuanchor="page4"><a href="index.html"><span>Process</span></a></li>
+            <li data-menuanchor="page5"><a href="index.html"><span>Team</span></a></li>
+            <li data-menuanchor="page6"><a href="index.html"><span>Contact</span></a></li>
+            <li style=" width:100%;float:right" id="index_x"><img src="images/close.png" style="padding-right:15px; float:right; margin-top:10px"></li>
+        </nav>
+        <div class="nav-tel" style="font-size:16px"><a href="guidechinese.html"> 简体中文 </a> | <a style="color:#fff" href="guidepage.html">English</a></div>
+      </div>
+
+    </header>
+    <div class='row'>
+      <div class="top">
+        <h3>Guide -- <span> Chosen University </span></h3>
+      </div>
+
+      <div class='wizard step-1'>
+        <div class='vehicle' id='vehicle'>
+          <div class='vehicle-info'>
+            <div class='vehicle-info__text'>
+              <div class='vehicle-examples'>
+                <div class='vehicle-examples__type'>
+                </div>
+                <div class="confirm">
+                  <h5 class="summery">Customer Information</h5>
+                  <br>
+                  <p>First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="firstname" id="firstname">
+                  </p>
+                  <br>
+                  <p>Last Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="lastname" id="lastname">
+                  </p>
+                  <br>
+                  <p>Email Address: &nbsp;&nbsp;
+                    <input type="text" name="email" id="email">
+                  </p>
+                  <br>
+                  <p>Phone Number:&nbsp;&nbsp;
+                    <input type="text" name="phone" id="phone">
+                  </p>
+                  <br>
+                  <h5 class="servicecharge">Charge</h5>
+                  <p>It is totally free. Our goal is to help new university students settle down</p>
+                  <br>
+
+                  <a href="#" class="reservebutton" id="reservebutton">reserve</a>
+                </div>
+
+              </div>
+
+            </div>
+            <div class='chargesum'>
+              <div class='summery'>
+                <h5 class="summeryh">Service Item</h5>
+              </div>
+              <ul class="servicespan">
+                <li class="servicesum"> <input type="checkbox" name="serviceitem1">Appy SIM Card</li>
+                <img src="images/guidepage/fido.jpg" width="150px"><img src="images/guidepage/bell.jpg" width="150px"><img src="images/guidepage/rogers.jpg" width="150px"><img src="images/guidepage/virgin.jpg"  width="150px">
+                <li class="servicesum"><input type="checkbox" name="serviceitem2">Apply Credit Card</li>
+                <img src="images/guidepage/rbc.jpg"><img src="images/guidepage/td.jpg"><img src="images/guidepage/bmo.jpg"><img src="images/guidepage/cibc.jpg">
+                <li class="servicesum"><input type="checkbox" name="serviceitem3">Go Shopping</li>
+                 <li class="servicesum"><input type="date" name="serviceitem4"></li>
+              </ul>
+              <h5 class="servicecharge">Charges</h3>
+                    <ul class="servicespan">
+                        <li class="servicesum">Date:<span> 16 / Feb / 2016 </span></li>
+                        </ul>
+            </div>
+
+          </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/sub1.js"></script>
+  </body>
+
+</html>

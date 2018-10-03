@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Submit success</title>
+<link href="ok_files/css.css" rel="stylesheet">
+	
+<style type="text/css">
+
+.product_box{
+	position:relative;
+	width:94%;
+	margin:0 auto;	
+}
+.product_box a{
+	display:inline-block;
+	width:47%;
+	height:93%;
+	position:absolute;
+	top:3%;	
+}
+.product_box .pro{
+	display:inline-block;
+	width:47%;
+	position:absolute;
+	top:3%;
+
+}
+.product_box .left{
+	left:2%;	
+}
+.product_box .right{
+	right:2%;	
+}
+.fl{ float:left}
+.fr{ float:right}
+</style>
+</head>
+
+<body>
+ <div class="mod_bar">
+        <a href="index.html" id="indexBack" class="mod_bar_back">Return</a>
+        <div class="mod_bar_tit" id="indexTitle">Submit success</div>
+    </div>
+
+    <div class="pay_tip">
+        <i class="icon_success"></i>
+        <div class="txt">
+          <h2 style="font-weight:600">Submit success</h2>
+          <div class="sub_tit" style=" font-family:'微软雅黑'; line-height:20px;">We will arrange for you within 1 day, please keep the phone open and check your email!</div>
+        </div>
+        <br>
+    </div>
+
+
+
+
+<script type="text/javascript">
+
+       function getQueryString(name) {
+		   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		   var r = window.location.search.substr(1).match(reg);
+		   if (r != null) return unescape(r[2]); return null;
+       } 
+	   
+	   function getUrl(url,sc){
+		   var localurl = document.location.href;
+		   getQueryString(localurl);
+		   var id = getQueryString('id');
+		   window.location.href=""+url+"?id="+id+sc+""; 
+	   }
+	   
+</script>
+
+
+
+
+</body></html>

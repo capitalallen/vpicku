@@ -1,0 +1,14 @@
+img.insImg {
+	text-align: center;
+	vertical-align: middle;
+}
+p.insfirst{
+  font-weight: bold;
+}
+.insdetail {
+  display: none;
+}
+a.insknow{
+  color: black;
+  text-decoration: underline;
+}

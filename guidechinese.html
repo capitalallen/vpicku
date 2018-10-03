@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>vpicku</title>
+    <meta name="generator" content="ymypt CMS" />
+    <meta name="author" content="Allen" />
+    <meta name="keywords" content="大学接机 新生服务 vpicku 加拿大接机 留学过渡" />
+    <meta name="description" content="这是一个专门为留学生提供大学接机和服务的网站" />
+    <link rel="shortcut icon" id="favicon" href="/favicon.png" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/main.css?v=17.24" />
+    <link rel="stylesheet" type="text/css" href="css/orderpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Crete+Round|Hammersmith+One|Patua+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/guide.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <script type="text/javascript" src="js/guide.js"></script>
+    <style type="text/css">
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      li {
+        font-family: microsoft yahei;
+      }
+
+    </style>
+  </head>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#index_x").click(function() {
+        $("#menu").hide();
+      });
+      $("#index_xs").click(function() {
+        $("#menu").show();
+      });
+    });
+
+  </script>
+
+  <body onload="univerName()">
+
+    <header id="header">
+      <div class="container clearfix">
+        <nav>
+          <a class="icon_menu" id="index_xs"><img src="images/caidan.png"></a>
+           <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a data-name="home" href="chinese.html"><span>主页</span></a></li>
+            <li data-menuanchor="page2"><a href="chinese.html#page2"><span>流程</span></a></li>
+            <li data-menuanchor="page3"><a href="chinese.html#page3"><span>接机</span></a></li>
+            <li data-menuanchor="page4"><a href="chinese.html#page4"><span>大使</span></a></li>
+            <li data-menuanchor="page6"><a href="chinese.html#page5"><span>联系我们</span></a></li>
+            <li style=" width:100%;float:right" id="index_x"><img src="images/close.png" style="padding-right:15px; float:right; margin-top:10px"></li>
+        </nav>
+        </nav>
+        <div class="nav-tel" style="font-size:16px"><a href="guidechinese.html"> 简体中文 </a> | <a style="color:#fff" href="guidepage.html">English</a></div>
+      </div>
+
+    </header>
+    <!--     <div id="divMain"> -->
+    <div class='row'>
+      <div class="top">
+        <h3>校园大使 -- <span id="unName"> 选择的大学 </span></h3>
+      </div>
+
+      <div class='wizard step-1'>
+        <div class='vehicle' id='vehicle'>
+          <form id="wfform" name="wfform" action="save_mcm.asp" method="post" onsubmit="return postcheck()">
+            <div class='vehicle-info'>
+              <div class='vehicle-info__text'>
+                <div class='vehicle-examples'>
+                  <div class='vehicle-examples__type'>
+                  </div>
+                  <div class="confirm">
+                    <h5 class="summery">客户信息</h5>
+                    <br>
+                    <p>姓: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="firstname" id="firstname">
+                    </p>
+                    <br>
+                    <p>名: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="lastname" id="lastname">
+                    </p>
+                    <br>
+                    <p>邮箱: &nbsp;&nbsp;
+                      <input type="text" name="email" id="email">
+                    </p>
+                    <br>
+                    <p>电话号:&nbsp;&nbsp;
+                      <input type="text" name="phone" id="phone">
+                    </p>
+                    <br>
+                    <h5 class="servicecharge">费用</h5>
+                    <p>完全免费，我们的目的就是帮助更多大一新生尽快适应大学生活。</p>
+                    <br>
+                    <input name="" type="submit" class="reservebutton" style="border:none" value="预定" />
+                  </div>
+
+                </div>
+
+              </div>
+              <div class='chargesum'>
+                <div class='summery'>
+                  <h5 class="summeryh">各项服务</h5>
+                </div>
+                <ul class="servicespan">
+                  <li class="servicesum">
+                    <input type="checkbox" name="serviceitem1" value="Appy SIM Card" id="servItem1">办理手机卡<br>（我们的校园大使会带领您到附近的手机卡提供商处进行办理）</li>
+                  <img src="images/guidepage/fido.jpg" class="guideImg"><img src="images/guidepage/bell.jpg" class="guideImg"><img src="images/guidepage/rogers.jpg" class="guideImg"><img src="images/guidepage/virgin.jpg" class="guideImg">
+                  <li class="servicesum">
+                    <input type="checkbox" name="serviceitem1" value="Apply Credit Card">办理银行卡<br>（我们的校园大使会带领您到附近的银行进行办理）</li>
+                  <img src="images/guidepage/rbc.jpg" class="guideImg"><img src="images/guidepage/td.jpg" class="guideImg"><img src="images/guidepage/bmo.jpg" class="guideImg"><img src="images/guidepage/cibc.jpg" class="guideImg">
+                  <li class="servicesum">
+                    <input type="checkbox" name="serviceitem1" value="Go Shopping" id="shopping">购物<br>（我们的校园大使会带领您到附近的商场进行办理）</li>
+                  <li class="servicesum">
+                    日期<input type="date" name="serviceitem4" id="chosenDate">
+                  </li>
+                </ul>
+                <h5 class="servicecharge">汇总</h5>
+                <ul class="servicespan">
+                  <li class="servicesum">日期:<span id="guideDate"></span></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/namechinese.js"></script>
+        <script type="text/javascript" src="js/sub1.js"></script>
+  </body>
+
+</html>
